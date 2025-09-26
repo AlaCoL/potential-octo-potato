@@ -2,7 +2,7 @@ import telebot
 from model import get_class
 import os
 
-bot = telebot.TeleBot("7047947994:AAGqnklImKWS-fAmamMHe_ym3w3WfW_TSx4")
+bot = telebot.TeleBot("TOKIT")
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
     bot.reply_to(message, f'Привет! Я бот {bot.get_me().first_name}!')
